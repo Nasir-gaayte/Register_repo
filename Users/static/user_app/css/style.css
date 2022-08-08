@@ -1,0 +1,3 @@
+.back{
+    background-image: url("{% static "/user_app/images/go2.png" %}"");
+}

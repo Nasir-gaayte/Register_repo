@@ -2,10 +2,16 @@
 
 {% load static %}
 {% block content %}
-
-  <form method="POST">
+<div class="container">
+  <form style="
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #acbfd1;
+  border-radius: .3rem;"
+  method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Submit">
   </form>
+</div>
 {% endblock content %}

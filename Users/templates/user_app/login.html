@@ -1,0 +1,16 @@
+{% extends "user_app/base.html" %}
+{% block content %}
+
+  
+<div class="container">
+    <form style="
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-color: #e9ecef;
+        border-radius: .3rem;" method="post">
+        {% csrf_token %}
+        {{ login_form.as_p }}
+        <input type="submit" value="Login">
+    </form>
+</div>
+{% endblock %}
